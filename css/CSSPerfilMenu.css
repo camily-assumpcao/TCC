@@ -1,0 +1,51 @@
+/* Importa do Google a fonte - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.perfil {
+    position: absolute;
+    left:20px;
+    top:25px;
+  }
+
+.cabecalho .perfil .imgperfil {
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    background: green;
+    /* background-image: url("../img/avatar.jpg"); */
+    border-radius: 50%;
+}
+
+.cabecalho .perfil .imgperfil img {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.perfil-nome {
+    position: relative;
+    left:62px;
+    top: -3px;
+    font-size: 20px;
+    color: white;
+}
+
+.perfil-funcao {
+    position: relative;
+    left:62px;
+    top: -10px;
+    font-size: 13px;
+    color: white;
+}

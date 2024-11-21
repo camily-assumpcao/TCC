@@ -1,0 +1,61 @@
+.link_img {
+    text-align: right;
+    margin-bottom:0;
+}
+
+.link_img a{
+    color: white;
+    font-size: 10px;
+}
+
+section.atalhos
+{
+    padding: 40px 4%;
+    text-align: center;
+}
+
+.container
+{
+    gap: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.atalhos-box
+{
+    gap: 60px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #c1ffc1c9;
+    width: 108%;
+    height: 120%;
+}
+
+.atalhos-box:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px black;
+    transition: .2s;
+}
+
+.atalhos-box i
+{
+    font-size: 100px;
+    color: black;
+}
+
+.atalhos-box h3
+{
+    font-size: 26px;
+    color: black;
+    margin: 15px 0;
+}
+
+.atalhos-box p
+{
+    color: black;
+    font-size: 20px;
+}

@@ -1,0 +1,124 @@
+body {
+  background-color: #c1ffc1d3;
+}
+
+.btnVoltar {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btnVoltar > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.titulo h1 {
+  font-family: "Poppins";
+  color: #196555;
+  text-align: center;
+}
+
+.container-principal {
+  padding: 25px 9%;
+}
+
+.capalivro img {
+  background-color: aliceblue;
+  padding: 10px;
+  align-items: left;
+  display: inline-flex;
+  height: 70%;
+  width: 24.5%;
+  position: absolute;
+  left: 0;
+  top: 8;
+  margin-left: 5%;
+  align-items: center;
+}
+
+.detalhes {
+  text-align: justify;
+  margin-left: 30%;
+  font-size: 25px;
+  margin-top: 0;
+  font-family: "Inter";
+  padding: 0px 20px;
+}
+
+.detalhes h3 {
+  font-weight: bold 800;
+}
+
+.botoes {
+  text-align: center;
+}
+
+.botoes a {
+  text-decoration: none;
+}
+
+.btnEditar,
+.btnDeletar,
+.btnAgendar {
+  width: 6.5em;
+  height: 2.3em;
+  margin: 0.5em;
+  background: #196555;
+  color: white;
+  border: none;
+  border-radius: 0.625em;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: background 0.3s ease, transform 0.2s ease-out;
+}
+
+.btnEditar:hover,
+.btnDeletar:hover,
+.btnAgendar:hover {
+  background: #149c77;
+  transform: scale(1.05);
+}
+
+/* Responsivo */
+
+@media (max-width: 700px) {
+  .btnVoltar {
+    width: 120px;
+  }
+
+  .capalivro img {
+    position: relative;
+    height: 300px;
+    width: 200px;
+  }
+
+  .capalivro {
+    text-align: center;
+  }
+
+  .detalhes {
+    margin-left: 0px;
+  }
+}

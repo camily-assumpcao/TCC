@@ -1,0 +1,279 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color: #b1e3c7;
+    font-family: 'Inter', sans-serif;
+}
+
+.btnVoltar {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 8%;
+}
+
+.btnVoltar > svg {
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+.titulo {
+  font-size: 80%;
+  font-family: "Poppins";
+  color: #196555;
+  text-align: center;
+}
+
+.container-principal{
+    padding: 25px 9%;
+    text-align: center;   
+}
+
+.container-principal .container-image{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 30px;
+    margin-left: 0%;
+}
+
+.container-principal .container-image .image{
+    width: 350px;
+    border-radius: 5px;
+    border: 2px solid #196555;;
+    box-shadow: 0 5px 10px rgba(0,0,0,.1);
+    background-color: #fff;
+    padding: 15px;
+}
+
+.container-principal .container-image .image img{
+    width: 70%;
+    height: 355px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.img h3 {
+  font-family: "noto sans";
+}
+
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form .btnSearch 
+{
+    border: none;
+    background: none;
+    color: #8b8ba7;
+}
+  /* styling of whole input container */
+  .form {
+    --timing: 0.3s;
+    --width-of-input: 200px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg,#fff);
+  }
+  /* styling of Input */
+  .input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+  }
+  /* styling of animated border */
+  .form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+  }
+  /* Hover on Input */
+  .form:focus-within {
+    border-radius: var(--after-border-radius);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  /* here is code of animated border */
+  .form:focus-within:before {
+    transform: scale(1);
+  }
+  /* styling of close button */
+  /* == you can click the close button to remove text == */
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* close button shown when typing */
+  input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* sizing svg icons */
+  .form svg {
+    width: 17px;
+    margin-top: 3px;
+  }
+
+ /* responsivo aqui embaixo, amém */
+
+  @media screen and (max-width:1320px)  and (min-width:1000px){ 
+  .container-principal .container-image{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 5%;
+      padding: 10px;
+      margin: 0;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .container-principal .container-image{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 5%;
+      padding: 10px;
+      margin: 0;
+  }
+
+  .container-principal .container-image .image{
+      border-radius: 5px;
+      border: 2px solid #000;
+      box-shadow: 0 5px 10px rgba(0,0,0,.1);
+      background-color: #fff;
+      padding: 20px;
+      width: 250px;
+      height: 450px;
+  }
+} 
+
+@media screen and (max-width:740px) { 
+  .container-principal .container-image .image:hover
+  {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px black;
+      transition: .2s;
+  }
+  .container-principal .container-image .image{
+      border-radius: 5px;
+      border: 2px solid #000;
+      box-shadow: 0 5px 10px rgba(0,0,0,.1);
+      background-color: #fff;
+      padding: 20px;
+      width: 250px;
+      height: 450px;
+  }
+
+  .container-principal .container-image{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 20px;
+      padding: 10px;
+  }
+
+  .container-principal .container-image .image{
+      border-radius: 5px;
+      border: 2px solid #000;
+      box-shadow: 0 5px 10px rgba(0,0,0,.1);
+      background-color: #fff;
+      padding: 20px;
+      width: 250px;
+      height: 450px;
+  }
+
+  .container-principal .container-image .image img{
+      min-width: 50%;
+      max-height: 60%;
+      object-fit: scale-down;
+      margin-bottom: 10%;
+      border-radius: 5px;
+      border: 1px solid #000;
+  }
+  .detalhes{
+    margin-top: 0;
+    padding: 7px 20px;
+  }
+ 
+}
+  .btnVoltar{
+    display: flex;
+    align-items: center;
+}
+
+.btnVoltar button{
+    border: none;
+    background-color: var(--button-color);
+    padding: 0.5rem 0.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btnVoltar button:hover{
+    background-color: var(--sublime-color);
+}
+
+.btnVoltar button a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+@media screen and (max-width:755px) {
+  .container-principal .container-image .image img{
+      min-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      margin-bottom: 10%;
+      border-radius: 5px;
+      border: 1px solid #000;
+  }
+}

@@ -1,0 +1,179 @@
+/* Importa do Google a fonte - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+
+:root {
+  --text-color: white;
+  --hover-button-color: #74C69D;
+  --button-color: #95D5B2;
+  --sublime-color: #196555;
+}
+
+
+/* Corpo da Página */
+body {
+  background-image: url("../img/background2.jpg");
+  font-size: 100%;
+  background-color: #C1FFC1;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* "Caixa" do menu horizontal */
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+}
+
+/* Configurações da imagem do cabeçalho */
+.Logo {
+  font-family: "abril fatface";
+  font-size: 35px;
+  position: absolute;
+  left: 650px;
+  color: white;
+}
+
+/* Organização do menu horizontal  */
+.cabecalho-menu {
+  display: flex;
+  gap: 32px;
+  padding: 20px 15px;
+}
+
+/* Estilização dos itens do menu horizontal/cabeçalho */
+.cabecalho-menu-item {
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+  background-color: #2E8B57;
+  text-transform:uppercase;
+  text-decoration:none;
+  transition: 0.4s ease-in-out;
+}
+
+/* Configurações do botão suspenso */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/* Configurações da parte suspensa */
+.dropdow {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9; /*transparent*/
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 20px;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/* Estilização do botão de logout */
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #C1FFC1;
+}
+
+
+/* Configurações do simbolo de logout */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: black;
+}
+/* texto de logout */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+/* efeito de foco na largura do botão */
+.Btn:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+/* texto do botão de efeito de foco */
+.Btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 10px;
+}
+/* efeito de clique do botão */
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+
+
